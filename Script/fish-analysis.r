@@ -29,7 +29,17 @@ library(tidyverse)
 
 ggplot(fish_data_cat,aes(x=length,y=scalelength,color=lakeid))+
   geom_point(size=3)
+
+
+#Question 6
   
 #new histogram
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
-  geom_histogram()
+  geom_histogram(bins=80)
+
+ggsave("Figures/scale_hist_by_length.jpg")
+
+
+
+
+
