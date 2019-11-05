@@ -30,3 +30,6 @@ library(tidyverse)
 ggplot(fish_data_cat,aes(x=length,y=scalelength,color=lakeid))+
   geom_point(size=3)
   
+#new histogram
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()
